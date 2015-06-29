@@ -64,7 +64,7 @@ class ProductTest < ActiveSupport::TestCase
     # уже было использовано
     assert product.invalid?
     # assert_equal ["has already been taken"], product.errors[:title]
-    assert_equal [I18n.translate('activerecord.errors.messages.taken')], product.errors[:title]
+    assert_equal [I18n.translate('errors.messages.taken')], product.errors[:title]
   end
 
 end
